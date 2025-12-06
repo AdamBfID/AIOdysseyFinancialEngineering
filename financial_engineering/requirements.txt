@@ -1,0 +1,55 @@
+# -----------------------------
+# Core Data Science
+# -----------------------------
+numpy==1.26.4                # Latest supported on Python 3.11
+pandas==2.2.3                # Fully compatible with Python 3.11
+scipy==1.13.1                # Latest for Python 3.11
+scikit-learn==1.5.2          # Latest for Python 3.11
+
+# -----------------------------
+# Deep Learning
+# -----------------------------
+tensorflow==2.16.1           # Officially supports Python 3.11
+keras==3.3.3                 # Matches TF 2.16
+torch==2.3.1                 # Full Python 3.11 support
+
+# -----------------------------
+# Time Series & Technical Analysis
+# -----------------------------
+statsmodels==0.14.2          # Stable + Py3.11 support
+ta==0.11.0                   # Works on Python 3.11
+
+# -----------------------------
+# Data Collection (Free APIs)
+# -----------------------------
+yfinance==0.2.38
+pandas-datareader==0.10.0
+requests==2.32.3
+
+# -----------------------------
+# Visualization & Dashboard
+# -----------------------------
+matplotlib==3.9.0            # Python 3.11 compatible
+plotly==5.24.1
+seaborn==0.13.2
+dash==2.17.1
+
+# -----------------------------
+# Model Explainability
+# -----------------------------
+scikit-optimize==0.10.2      # Python 3.11-compatible fork
+shap==0.46.0                 # Py3.11 support improved
+lime==0.2.0.1                # Latest stable
+
+# -----------------------------
+# Optimization
+# -----------------------------
+cvxpy==1.5.3                 # Fully compatible with Python 3.11
+
+# -----------------------------
+# Utilities
+# -----------------------------
+python-dotenv==1.0.1
+jupyter==1.0.0
+ipython==8.26.0
+tqdm==4.66.4
