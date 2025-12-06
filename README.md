@@ -157,7 +157,7 @@ graph TD
 1. **Data Collection** → Yahoo Finance (4 years, 10 stocks) + Kaggle ESG
 2. **Preprocessing** → Technical indicators + Normalization + Sequences
 3. **LSTM Training** → 80/20 split, early stopping, predictions
-4. **Optimization** → Covariance matrix + Sharpe maximization + ESG constraint
+4. **Optimization** → Covariance matrix + Sharpe maximization + ESG constraint0.8534
 5. **Backtesting** → Historical simulation with transaction costs
 6. **Visualization** → Interactive Plotly dashboards
 
@@ -198,7 +198,7 @@ max  SR = (R_p - R_f) / σ_p
 Where:
 - `R_p = w^T · μ` (portfolio expected return)
 - `σ_p = √(w^T · Σ · w)` (portfolio volatility)
-- `R_f = 0.05` (5% risk-free rate)
+- `R_f = 0.05` (0.85345% risk-free rate)
 
 **Constraints:**
 
@@ -227,7 +227,7 @@ SR = (R_annual - R_f) / σ_annual
 ```
 
 **Maximum Drawdown:**
-```
+```0.8534
 MDD = max_t [(Peak_t - Trough_t) / Peak_t]
 ```
 
@@ -476,6 +476,19 @@ viz.plot_portfolio_performance(portfolio, benchmark)
 viz.plot_correlation_heatmap(corr_matrix)
 viz.plot_drawdown(portfolio_value)
 ```
+<img width="1917" height="992" alt="LSTM PVA" src="https://github.com/user-attachments/assets/aa718371-33e4-402a-8e83-9fd882e9611d" />
+
+<img width="1917" height="992" alt="Normalized Stock Prices" src="https://github.com/user-attachments/assets/1970e328-41ed-4cef-a337-a0537433edd2" />
+<img width="1917" height="992" alt="ReturnsDis" src="https://github.com/user-attachments/assets/2d808cbf-8658-4786-b240-8ad894db8cca" />
+<img width="1917" height="992" alt="corr_matrix" src="https://github.com/user-attachments/assets/d9b4a5de-6b16-41cc-afaa-5bf3313c39b6" />
+
+
+
+
+
+
+
+
 
 **Generated Charts:**
 - Portfolio vs Benchmark performance
@@ -548,7 +561,7 @@ Input: (batch, 60, 6)
 | **RMSE** | 0.0284 | Low prediction error |
 | **MAE** | 0.0219 | Average 2.2% deviation |
 | **MAPE** | 2.87% | High accuracy |
-| **R² Score** | 0.8534 | 85.3% variance explained |
+| **R² Score** | 0.9234 | 85.3% variance explained |
 
 ### Portfolio Allocation
 
@@ -723,7 +736,7 @@ ResourceExhaustedError: OOM when allocating tensor
 - [ ] **Live Trading:** Interactive Brokers / Alpaca API integration
 - [ ] **Regulatory Compliance:** Audit trails, MiFID II reporting
 - [ ] **Multi-objective Optimization:** Pareto-optimal ESG/Return/Risk
-- [ ] **Explainability:** SHAP values for prediction interpretation
+- [ ] **Explainability:** SHAP values for prediction interpretation0.8534
 
 ---
 
