@@ -127,6 +127,7 @@ financial_engineering/
 
 ## System Architecture
 
+
 ```mermaid
 graph TD
     A[Yahoo Finance API] --> B[Data Loader]
@@ -138,7 +139,7 @@ graph TD
     F --> G[Price Predictions]
     D --> H["Portfolio Optimizer (SLSQP + ESG)"]
     G --> H
-    H --> I[Optimal Weights (w1…w10)]
+    H --> I["Optimal Weights (w1...w10)"]
     I --> J[Backtester: Historical Simulation]
     A --> J
     J --> K[Performance Metrics: Sharpe, Drawdown, etc.]
@@ -148,6 +149,7 @@ graph TD
     style H fill:#99ccff
     style J fill:#99ff99
 ```
+
 
 
 ### Pipeline Flow
