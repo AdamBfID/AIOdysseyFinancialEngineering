@@ -126,6 +126,8 @@ financial_engineering/
 ---
 
 ## System Architecture
+
+```mermaid
 graph TD
     A[Yahoo Finance API] --> B[Data Loader]
     A1[Kaggle ESG Dataset] --> B
@@ -134,20 +136,18 @@ graph TD
     D --> E["Sequence Generation (60-day windows)"]
     E --> F["LSTM Model (3 layers: 128 → 64 → 32)"]
     F --> G[Price Predictions]
-    
     D --> H["Portfolio Optimizer (SLSQP + ESG)"]
     G --> H
     H --> I[Optimal Weights (w1…w10)]
-    
     I --> J[Backtester: Historical Simulation]
     A --> J
     J --> K[Performance Metrics: Sharpe, Drawdown, etc.]
-    
     K --> L[Visualization: Interactive Charts]
 
     style F fill:#ff9999
     style H fill:#99ccff
     style J fill:#99ff99
+```
 
 
 ### Pipeline Flow
