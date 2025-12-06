@@ -315,7 +315,7 @@ Edit `config.py` to customize:
 STOCKS = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA']
 
 # Adjust time period
-START_DATE = '2022-01-01'
+START_DATE = '2021-01-01'
 END_DATE = '2025-12-31'
 
 # LSTM hyperparameters
@@ -462,7 +462,7 @@ results = backtester.run_backtest()
 - Transaction cost: 0.1% per trade
 - Slippage: 0.05%
 - Rebalancing: Monthly
-- Period: Dec 2022 - Dec 2025
+- Period: Dec 2021 - Dec 2025
 
 ### Step 8: Visualization
 
@@ -613,7 +613,7 @@ Input: (batch, 60, 6)
 ```python
 STOCKS = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 
           'META', 'NVDA', 'JPM', 'JNJ', 'V']
-START_DATE = '2022-12-01'
+START_DATE = '2021-12-01'
 END_DATE = '2025-12-31'
 ```
 
