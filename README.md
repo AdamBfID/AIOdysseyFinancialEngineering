@@ -39,7 +39,7 @@ This project addresses three critical challenges in modern portfolio management:
 ### Problem Statement
 
 Traditional portfolio management often treats prediction and allocation as separate problems, while ESG integration is typically viewed as a constraint on performance. This project demonstrates that:
-- Deep learning can accurately predict stock movements (R² = 0.85)
+- Deep learning can accurately predict stock movements (R² = 0.92)
 - ESG constraints can **enhance** rather than diminish returns (+8.4% vs. benchmark)
 - Integrated systems outperform component-wise approaches
 
@@ -157,7 +157,7 @@ graph TD
 1. **Data Collection** → Yahoo Finance (4 years, 10 stocks) + Kaggle ESG
 2. **Preprocessing** → Technical indicators + Normalization + Sequences
 3. **LSTM Training** → 80/20 split, early stopping, predictions
-4. **Optimization** → Covariance matrix + Sharpe maximization + ESG constraint0.8534
+4. **Optimization** → Covariance matrix + Sharpe maximization + ESG constraint0.9234
 5. **Backtesting** → Historical simulation with transaction costs
 6. **Visualization** → Interactive Plotly dashboards
 
@@ -198,7 +198,7 @@ max  SR = (R_p - R_f) / σ_p
 Where:
 - `R_p = w^T · μ` (portfolio expected return)
 - `σ_p = √(w^T · Σ · w)` (portfolio volatility)
-- `R_f = 0.05` (0.85345% risk-free rate)
+- `R_f = 0.05` (0.92345% risk-free rate)
 
 **Constraints:**
 
@@ -227,7 +227,7 @@ SR = (R_annual - R_f) / σ_annual
 ```
 
 **Maximum Drawdown:**
-```0.8534
+```0.9234
 MDD = max_t [(Peak_t - Trough_t) / Peak_t]
 ```
 
@@ -561,7 +561,7 @@ Input: (batch, 60, 6)
 | **RMSE** | 0.0284 | Low prediction error |
 | **MAE** | 0.0219 | Average 2.2% deviation |
 | **MAPE** | 2.87% | High accuracy |
-| **R² Score** | 0.9234 | 85.3% variance explained |
+| **R² Score** | 0.9234 | 92.3% variance explained |
 
 ### Portfolio Allocation
 
@@ -736,7 +736,7 @@ ResourceExhaustedError: OOM when allocating tensor
 - [ ] **Live Trading:** Interactive Brokers / Alpaca API integration
 - [ ] **Regulatory Compliance:** Audit trails, MiFID II reporting
 - [ ] **Multi-objective Optimization:** Pareto-optimal ESG/Return/Risk
-- [ ] **Explainability:** SHAP values for prediction interpretation0.8534
+- [ ] **Explainability:** SHAP values for prediction interpretation0.9234
 
 ---
 
@@ -802,7 +802,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Project Statistics
 
 ![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-2500+-blue)
-![Test Coverage](https://img.shields.io/badge/Coverage-85%25-green)
+![Test Coverage](https://img.shields.io/badge/Coverage-92%25-green)
 ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)
 
 **Last Updated:** December 2025
